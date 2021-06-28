@@ -1,0 +1,64 @@
+body {
+  margin: 0 auto;
+  max-width: 40em;
+  width: 88%;
+}
+
+
+/**
+  * Add box sizing to everything
+  * @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+  */
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  #drum-machine {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 0.3125em;
+    grid-row-gap: 0.3125em;
+    text-align: center;
+  }
+
+  button {
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.25em;
+    font-weight: bold;
+  }
+
+  button:focus,
+  button:hover {
+    background-color: #e5e5e5;
+  }
+
+  #drum-machine button {
+    font-size: 2em;
+    height: 20vh;
+    text-transform: uppercase;
+    width: 100%;
+  }
+
+  .btn-record,
+  .btn-stop,
+  .btn-loop {
+    font-size: 1.2em;
+    padding: 0.5em 1em;
+  }
+
+  .btn-record {
+    color: #cb070e;
+  }
+
+  .btn-stop {
+    color: #272727;
+  }
+
+  .btn-loop {
+    color: #259443;
+  }
